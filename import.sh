@@ -3,7 +3,7 @@
 CSV_FILE="/mnt/add_cd/Users.csv"
 
 
-tail -n +2 "$CSV_FILE" | while IFS=';' read -r first_name last_name title phone ou street zip city country 
+tail -n +2 "$CSV_FILE" | while IFS=';' read -r first_name last_name title phone ou street password 
     
     login="${first_name}${last_name}"
 
